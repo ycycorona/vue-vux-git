@@ -1,0 +1,122 @@
+/* 飞行计划 */
+
+
+.flight-info{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+span.jian-jiao-code{
+  color: #e26b0a;
+  font-size: 13px;
+  margin-left: 0.2rem;
+}
+span.span-title{
+  font-size:16px;
+}
+.warning-div{
+  font-size:18px;
+  line-height:2
+}
+
+/*copy from xiecheng*/
+.icon-arrow {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    /*margin: .5rem .55rem 0;*/
+}
+.icon-arrow {
+    width: 100%;
+    height: .4rem;
+    display: inline-block;
+    /*float: left;*/
+    position: relative;
+}
+.icon-arrow-line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+}
+.icon-arrow-line:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    background: #ccc;
+}
+.icon-arrow-line:after {
+    content: '';
+    position: absolute;
+    right: -1px;
+    bottom: -1px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: .2rem .2rem .2rem 0;
+    border-color: transparent transparent #ccc;
+}
+/*copy from xiecheng*/
+.flight-person{
+    /*color: #696969*/;
+    color: white;
+    /*ackground-color: rgba(88, 108, 148, 0.3);*/
+    background-color: #6692A6;
+    /*background-color: transparent;*/
+    /*color: #696969;*/
+    border-radius: 0 0 5px 5px;
+}
+.flight-person span{
+    font-size: 12px;
+}
+.pre-status.ed{
+    color:#1aad19;
+}
+.pre-status.ing{
+    color:dodgerblue;
+}
+.pre-status.pre{
+    color:darkred;
+}
+.flight-time{
+    color:#696969;
+    font-size:14px;
+}
+.card-wrap h4{
+    padding-left: 0.5em;
+    /*background-color: #007cb5;*/
+    background-color: #49B8EA;
+    color: white;
+    margin-bottom: 0.5em;
+}
+.date-type{
+    font-weight: 600;
+}
+.crew-collapse{
+	display:none;
+}
+.crew-collapse.active{
+	display:block;
+}
+.flight-crew-row .crew-type{
+	font-weight:600;
+
+}
+.duty-managers li,.duty-phones li{
+	padding:0.25rem;
+}
+.date-wrap span{
+	background-color: rgb(73, 184, 234);
+    padding: 0.1rem 0.2rem;
+    border-radius: 5px;
+    color: white;
+
+}
+.date-wrap{
+	padding:0.2rem 0.5rem;
+	margin-top: 0.5em;
+	line-height: 1.6;
+}
+
