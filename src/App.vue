@@ -38,10 +38,8 @@
 
 <script>
 import {XHeader} from 'vux'
-import Slideout from 'vue-slideout'
+import Slideout from '../other-plug/vue-slideout/lib/vue-slideout'
 import vuxMask from './components/base-com/vux-mask'
-/*import iviewPage from 'iview/src/components/page'*/
-/*import select from 'iview/src/components/select';*/
 export default {
   created(){
     this.getLeftMenuWidth=window.innerWidth/2;
@@ -50,7 +48,6 @@ export default {
     XHeader,
     Slideout,
     vuxMask,
-/*    iviewPage*/
   },
   name: 'app',
   data () {

@@ -13,7 +13,6 @@ import preMenu from './components/pre-steps/pre-menu'
 import preIndex from './components/pre-steps/pre-index'
 import health from './components/pre-steps/health'
 import plan from './components/pre-steps/plan'
-/*import 'iview/dist/styles/iview.css'*/
 Vue.use(AjaxPlugin)
 Vue.use(VueRouter)
 
