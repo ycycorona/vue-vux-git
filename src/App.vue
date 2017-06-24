@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Slideout menu="#menu" panel="#panel" :isOpenStatus="isMenuShowStatus" @on-beforeclose="maskClose" :padding="getLeftMenuWidth" :toggleSelectors="['.toggle-button','#vux-mask-ycy']" @on-beforeopen="maskOpen">
+    <Slideout menu="#menu" panel="#panel"  @on-beforeclose="maskClose" :padding="getLeftMenuWidth" :toggleSelectors="['.toggle-button','#vux-mask-ycy']" @on-beforeopen="maskOpen">
       <nav id="menu" :style="{width:getLeftMenuWidth+'px'}">
         <!--动态加载所需的左菜单页面-->
         <keep-alive>
@@ -36,8 +36,8 @@
 
 <script>
 import {XHeader} from 'vux'
-import Slideout from '../other-plug/vue-slideout/lib/vue-slideout'
-/*import Slideout from 'vue-slideout'*/
+
+import Slideout from 'vue-slideout'
 import vuxMask from './components/base-com/vux-mask'
 export default {
   created(){
@@ -62,16 +62,14 @@ export default {
   },
   methods:{
     maskOpen() {
-      this.isMenuShowStatus=true ;
       this.isMaskShowStatus=true;
     },
     maskClose() {
-      this.isMenuShowStatus=false ;
       this.isMaskShowStatus=false;
     },
+    /*点击了某个菜单项，关闭slideout*/
     jsMenuToggle(){
-      this.isMenuShowStatus=!this.isMenuShowStatus
-
+      this.$children[0].slideout.toggle();
     }
   }
 }
