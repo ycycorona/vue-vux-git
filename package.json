@@ -12,7 +12,6 @@
   "dependencies": {
     "fastclick": "^1.0.6",
     "iview": "^2.0.0-rc.16",
-    "slideout": "^1.0.1",
     "vue": "^2.2.2",
     "vue-router": "^2.2.0",
     "vue-slideout": "^1.5.1",

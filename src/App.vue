@@ -6,8 +6,6 @@
         <keep-alive>
           <!--<router-view name="indexMenu"></router-view>-->
           <router-view name="menu" @menuClick="jsMenuToggle"></router-view>
-
-
         </keep-alive>
       </nav>
       <main id="panel">
@@ -39,6 +37,7 @@
 <script>
 import {XHeader} from 'vux'
 import Slideout from '../other-plug/vue-slideout/lib/vue-slideout'
+/*import Slideout from 'vue-slideout'*/
 import vuxMask from './components/base-com/vux-mask'
 export default {
   created(){
