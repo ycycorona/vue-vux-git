@@ -1,16 +1,51 @@
 /**
  * Created by ycy42 on 2017/6/15.
  */
-var express = require('express');
-var app = express();
+let express = require('../node_modules/express');
+let ejs = require('../node_modules/ejs');
+let path = require('path');
+let app = express();
 
-app.get('/', function (req, res) {
-  res.send(__dirname);
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+/*console.log(app.settings.view());*/
+app.engine('.html', ejs.__express);
+app.set('view engine', 'html');// app.set('view engine', 'ejs');
+
+app.locals.title = 'vue-test-project';
+/*app.set('view engine', 'html');*/
+app.use(express.static('public'));
+/*app.use(express.static('views'));*/
+
+app.use(function(err,req, res, next) {
+  res.status(err.status || 500);
+  res.render('error', {
+    message: err.message,
+    error: {}
+  });
+  next(err);
 });
-app.get('/name', function (req, res) {
-  res.send('ycy');
+app.use(function(req, res, next) {
+  console.log("12");
+  next();
 });
-app.use(express.static('../../dist'));
+app.use(function(req, res, next) {
+  console.log("34");
+});
+/*app.use(function (req, res, next) {
+  console.log('Time: %d', Date.now());
+  next();
+});*/
+
+/*app.get('/', function (req, res) {
+  res.sendfile('index.html');
+});*/
+
+//静态资源目录
+
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
 });
+
+
+

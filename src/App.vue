@@ -69,7 +69,18 @@ export default {
     },
     /*点击了某个菜单项，关闭slideout*/
     jsMenuToggle(){
-      this.$children[0].slideout.toggle();
+/*      this.$children[0].slideout.toggle();
+
+      // GET /someUrl
+      this.$http.post('/someUrl',{'name':"ycy"}).then(response => {
+
+        // get body data
+        this.someData = response.body;
+
+      }, response => {
+        // error callback
+      });*/
+
     }
   }
 }
