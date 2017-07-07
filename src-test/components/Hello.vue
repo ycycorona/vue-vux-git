@@ -21,11 +21,7 @@
 </template>
 
 <script>
-
 export default {
-  components: {
-
-  },
   name: 'hello',
   data () {
     return {
@@ -36,12 +32,8 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="less">
-  /*@import '~vux/src/styles/reset.less';*/
-</style>
-
 <style scoped>
-/*h1, h2 {
+h1, h2 {
   font-weight: normal;
 }
 
@@ -57,5 +49,5 @@ li {
 
 a {
   color: #42b983;
-}*/
+}
 </style>

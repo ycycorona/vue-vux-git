@@ -16,17 +16,21 @@ app.set('view engine', 'html');// app.set('view engine', 'ejs');
 app.locals.title = 'vue-test-project';
 /*app.set('view engine', 'html');*/
 app.use(express.static('public'));
-app.use(express.static('views'));
+/*app.use(express.static('views'));*/
 
-app.use(function(req, res, next) {
-  console.log("12");
-  next();
+
+
+/*app.use('/user',user);*/
+
+app.get('/', function (req, res) {
+  /*res.send();*/
+  res.sendFile(__dirname+'/views/index.html');
+  /*next();*/
 });
 
-app.use('/user',user);
-
-/*app.get('/', function (req, res) {
-  res.sendfile('/index.html');
+/*app.use('/',function(req, res, next) {
+  console.log("12");
+  next();
 });*/
 
 

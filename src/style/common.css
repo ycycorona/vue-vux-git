@@ -87,7 +87,7 @@ div.card-wrap{
     line-height: 1.6;
 }
 div.card-wrap .list-card li{
-    padding-top: .5rem;
+    /*padding-top: .5rem;*/
     margin-bottom: .6rem;
     border-radius: 5px;
     background-color: #fff;
