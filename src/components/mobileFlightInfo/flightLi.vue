@@ -26,7 +26,7 @@
         </div>
       </div>
       <!--卡片右侧-->
-      <div class="item-right" style="text-align: center;font-size: 12px;line-height: 1.8;">
+      <div class="item-right" style="text-align: left;font-size: 12px;line-height: 1.8;">
         <div class="mui-row" style="font-size:12px" >
           <span class="up-down up" >起</span>
           <span class="std fix-width-1">{{rawFlightItem.std.slice(11,16)}}</span>(<span  style='white-space:pre;' class="atd-etd fix-width-1" >{{rawFlightItem.atd=="" ? rawFlightItem.etd.slice(11,16) : rawFlightItem.atd.slice(11,16)}}</span><span  style='white-space:pre;' class="time-type up fix-width-2"></span>)
@@ -108,7 +108,7 @@
 
   }
   .flex-wrap>.item-left{
-    flex:7;
+    flex:8;
   }
   .flex-wrap>.item-right{
     flex:4;
